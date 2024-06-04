@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App quicksand">
       <h1 className="stick">Basic Blog</h1>
-      <div class="container"><Fetch/></div>
+      <div className="container"><Fetch/></div>
     </div>
   );
 }

@@ -12,16 +12,17 @@ const Fetch = () => {
       .then((data) => {
         setBlogs(data);
       })
-  }, [counts]);
+  }, []);
 
   function clicked() {
-      setCounts(counts => counts + 5)
+    setCounts(counts => counts + 5)
   }
 
   // blogs.splice(counts, 100 - counts);
   let temp = [];
   temp = [...blogs];
-  temp.splice(counts, 100-counts);
+  console.log(temp);
+  temp.splice(counts, 100 - counts);
 
   return (
     <>
